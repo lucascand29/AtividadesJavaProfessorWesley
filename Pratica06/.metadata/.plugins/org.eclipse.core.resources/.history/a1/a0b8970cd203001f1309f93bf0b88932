@@ -1,0 +1,32 @@
+package atividadesPratica06;
+import javax.swing.JOptionPane;
+
+public class Atividade03 {
+
+	public static void main(String[] args) {
+		String entrada;
+		
+		int quant = 0; 
+		double media;
+		int idade,total =0;
+		
+		
+		do {
+			entrada =JOptionPane.showInputDialog("Informe sua idade: ");
+			idade = Integer.parseInt(entrada);
+			quant ++;
+			
+			for(int i = 1; i < quant; i++) {
+				total =+idade;
+			}
+			
+			entrada = JOptionPane.showInputDialog("Deseja informar outra idade? (S)im ou (N)ão");
+		}while(entrada.equalsIgnoreCase("s") || entrada.equalsIgnoreCase("sim"));
+		
+		media = total/quant;
+		
+		JOptionPane.showMessageDialog(null,"A media de idades: " + media);
+ 
+	}
+
+}

@@ -1,0 +1,26 @@
+package atividadesPratica06;
+import javax.swing.JOptionPane;
+public class Atividade02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String  entrada;
+		
+		int n, total =0;
+		
+		entrada = JOptionPane.showInputDialog("Informe um número para fatorar: ");
+		n = Integer.parseInt(entrada);
+		if(n == 0) {
+			JOptionPane.showMessageDialog(null, "Resultado = 1");
+		}else if (n > 0) {
+			JOptionPane.showMessageDialog(null, "Número inválido");
+		}else {
+			for(int i = n; i == 0; i--) {
+				total = i*i;
+			}
+		}
+
+		System.out.println("resultado: "+ total);
+	}
+
+}

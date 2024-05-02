@@ -1,0 +1,43 @@
+package atividadesPratica06;
+import javax.swing.JOptionPane;
+
+public class Atividade03 {
+
+	public static void main(String[] args) {
+		String entrada;
+		
+		int cont = 0; 
+		int media;
+		int idade,total =0;
+		
+		
+
+			entrada =JOptionPane.showInputDialog("Informe sua idade. (Digite -1 para encerrar)");
+
+				for(int i = 1; idade > 0; i++) {
+					
+					idade = Integer.parseInt(entrada);
+					total =+ idade;
+					cont ++;
+					
+					entrada =JOptionPane.showInputDialog("Informe sua idade. (Digite -1 para encerrar)");
+					System.out.println("quantidade: "+ quant);
+					System.out.println("total: "+ total);
+				}
+
+
+				JOptionPane.showMessageDialog(null,"Opção inválida. ");
+			
+
+		
+		media = total/cont;
+		
+		JOptionPane.showMessageDialog(null,"A media de idades: " + media);
+		System.out.println("quantidade: "+ cont);
+		System.out.println("total: "+ total);
+		System.out.println("media: "+ media);
+
+ 
+	}
+
+}

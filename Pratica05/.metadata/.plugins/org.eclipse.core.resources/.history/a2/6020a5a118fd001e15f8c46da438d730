@@ -1,0 +1,22 @@
+package atividadesPratica05;
+import java.util.Scanner;
+public class Atividade01 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite um número");
+		int numero = entrada.nextInt();
+		
+		int i = 0 ;
+		while (numero > 0) {
+			i *=10;
+			i += (numero % 10);
+			numero /= 10;
+		}
+		
+		System.out.println("Número invertido = " + i);
+
+	}
+
+}

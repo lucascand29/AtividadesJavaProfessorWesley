@@ -1,0 +1,28 @@
+package atividadesPratica03;
+import java.util.Scanner;
+public class Atividade01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner entrada = new Scanner(System.in);
+		
+		String sexo;
+		int idade;
+		
+		System.out.println("Informe o seu sexo, M - para Masculino e F- para Feminino: ");
+		sexo = entrada.next();
+		if (sexo == "M" || sexo == "F") {
+			System.out.println("Informe sua idade:");
+			idade = entrada.nextInt();
+			if (idade <= 15 && sexo == "M") {
+				System.out.println("");
+			}
+		}
+		else {
+			System.out.println("Informação invalida!");
+		}
+		
+
+	}
+
+}

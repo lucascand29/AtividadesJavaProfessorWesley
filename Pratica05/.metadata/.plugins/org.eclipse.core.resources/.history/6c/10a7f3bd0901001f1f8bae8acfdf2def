@@ -1,0 +1,29 @@
+package atividadesPratica05;
+import java.util.Scanner;
+public class Atividade01 {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		int n = 0;
+		int numeroInvertido = 0;
+		int soma;
+		System.out.println("Informe um número de 3 digitos:");
+		int numero = entrada.nextInt();
+		
+		soma = numeroInvertido + numero;
+
+		while(numero >0) {
+				if(numero <1000) {
+					numeroInvertido *= 10; 
+					numeroInvertido += (numero % 10);
+					numero /= 10;
+
+				}
+			}
+		
+		System.out.println("Numero invertido: "+numeroInvertido);
+		System.out.println("Resultado: "+soma);
+	}
+
+}
